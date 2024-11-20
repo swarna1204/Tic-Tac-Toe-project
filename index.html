@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Tic Tac Toe</h1>
+
+        <!-- Player Setup Section -->
+        <div id="player-setup" class="player-setup">
+            <div class="input-group">
+                <input type="text" id="player1" placeholder="Player X Name" class="player-input">
+                <input type="text" id="player2" placeholder="Player O Name" class="player-input">
+                <button id="start-game" class="btn start-btn">Start Game</button>
+            </div>
+        </div>
+
+        <!-- Game Section -->
+        <div id="game-container" class="game-container hidden">
+            <div id="status" class="status">Player X's Turn</div>
+
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div class="button-container">
+                <button id="reset" class="btn reset-btn">Reset Game</button>
+                <button id="new-game" class="btn new-game-btn">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
